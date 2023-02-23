@@ -9,7 +9,7 @@ body, html {
 }
 
 table, td, th {
-    border: 1px solid #aaa;
+    border: 1px solid rgb(207, 55, 55);
 }
 
 table {

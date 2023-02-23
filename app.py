@@ -58,7 +58,10 @@ def index():
                                 img_data.append(mydict)
                                 with open(os.path.join(save_directory, f"{query}_{image_tags.index(image_tag)}.jpg"), "wb") as f:
                                     f.write(image_data)
-                    client = pymongo.MongoClient("mongodb+srv://pwskills:pwskills@cluster0.ln0bt5m.mongodb.net/?retryWrites=true&w=majority")
+                    
+                    client = pymongo.MongoClient("mongodb+srv://adarshmsd1:adarshmsd1@cluster0.zak3an8.mongodb.net/?retryWrites=true&w=majority")
+                    db = client.test
+
                     db = client['image_scrap']
                     review_col = db['image_scrap_data']
                     review_col.insert_many(img_data)          
